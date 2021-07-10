@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:technical_assessment/contact.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,6 +47,12 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+_incrementCounter() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  String timeSetting = 'deafult';
+  await prefs.setString('timeSetting', timeSetting);
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
@@ -61,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    return ContactList();
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
