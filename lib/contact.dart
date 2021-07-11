@@ -26,13 +26,33 @@ class _ContactListState extends State<ContactList> {
       RefreshController(initialRefresh: false);
   void _onRefresh() async {
     await Future.delayed(Duration(milliseconds: 1000));
-    for (int i = 0; i < 5; i++) {
-      mainContactList.add(ContactModel(
-        name: 'Kamal',
-        phone: '0122838638',
-        date: DateTime.now().toString(),
-      ));
-    }
+    // for (int i = 0; i < 5; i++) {
+    mainContactList.add(ContactModel(
+      name: 'Remi',
+      phone: '0122838638',
+      date: DateTime.now().toString(),
+    ));
+    mainContactList.add(ContactModel(
+      name: 'Dybala',
+      phone: '0123678902',
+      date: DateTime.now().toString(),
+    ));
+    mainContactList.add(ContactModel(
+      name: 'Jackie',
+      phone: '0124456723',
+      date: DateTime.now().toString(),
+    ));
+    mainContactList.add(ContactModel(
+      name: 'Sabok',
+      phone: '0139998014',
+      date: DateTime.now().toString(),
+    ));
+    mainContactList.add(ContactModel(
+      name: 'Ozil',
+      phone: '0190876114',
+      date: DateTime.now().toString(),
+    ));
+    // }
     mainContactList.sort((b, a) => -a.date.compareTo(b.date));
     mainContactList = mainContactList.reversed.toList();
     listCount = listCount + 5;
