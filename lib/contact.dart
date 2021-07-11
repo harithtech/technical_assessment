@@ -12,7 +12,7 @@ class ContactList extends StatefulWidget {
 }
 
 class _ContactListState extends State<ContactList> {
-  int listCount = 2;
+  int listCount = 15;
   List mainContactList;
 
   void initState() {
@@ -58,7 +58,7 @@ class _ContactListState extends State<ContactList> {
           builder: (BuildContext context, LoadStatus mode) {
             Widget body;
             if (listCount == mainContactList.length) {
-              body = Text("No more Data");
+              body = Text("You have reached end of the list");
             } else if (mode == LoadStatus.idle) {
               body = Text("pull up load");
             } else if (mode == LoadStatus.loading) {
@@ -66,7 +66,7 @@ class _ContactListState extends State<ContactList> {
             } else if (mode == LoadStatus.failed) {
               body = Text("Load Failed!Click retry!");
             } else if (mode == LoadStatus.canLoading) {
-              body = Text("release to load more");
+              body = Text("pulling up the list");
             } else {
               body = Text("No more Data");
             }

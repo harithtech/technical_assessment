@@ -37,7 +37,7 @@ class MyHomePage extends StatefulWidget {
 
 _incrementCounter() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  String timeSetting = 'deafult';
+  String timeSetting = 'default';
   await prefs.setString('timeSetting', timeSetting);
 }
 
