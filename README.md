@@ -7,8 +7,6 @@ Plugins used:
 
 
 
-
-
 Intern Candidate Technical Assessment
 
 Your application must have the following:
