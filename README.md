@@ -1,5 +1,15 @@
 # technical_assessment
- Intern Candidate Technical Assessment
+
+Plugins used:
+1. share
+2. pull to refresh
+
+
+
+
+
+
+Intern Candidate Technical Assessment
 
 Your application must have the following:
 1. Display a contacts list that is sorted based on the time. The time should be displayed in
