@@ -9,7 +9,7 @@ class Contacts {
       date: '2021-07-17 10:02:46.501222',
     ),
     ContactModel(
-      name: 'Syauqi',
+      name: 'Abby',
       phone: '0197683461',
       date: '2021-06-17 10:02:46.501222',
     ),
